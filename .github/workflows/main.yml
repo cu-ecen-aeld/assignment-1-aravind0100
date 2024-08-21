@@ -10,7 +10,7 @@ jobs:
         container: cuaesd/aesd-autotest:unit-test
         runs-on: ubuntu-latest
         steps:
-          - uses: actions/checkout@v2
+          - uses: actions/checkout@task1
           - name: Checkout submodules
             run : git submodule update --init --recursive
           - name: Run unit test
@@ -19,7 +19,7 @@ jobs:
         container: cuaesd/aesd-autotest:assignment1
         runs-on: ubuntu-latest
         steps:
-          - uses: actions/checkout@v2
+          - uses: actions/checkout@task2
           - name: Checkout submodules
             run : git submodule update --init --recursive
           - name: Run full test
